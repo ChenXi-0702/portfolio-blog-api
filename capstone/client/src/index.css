@@ -1,0 +1,253 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #172033;
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  h2 {
+    color: #172033;
+  }
+  a {
+    color: #1d4ed8;
+  }
+  .site-header {
+    background-color: #e2e8f0;
+  }
+  .site-footer {
+    background-color: #e2e8f0;
+  }
+  .project-card {
+    background-color: #ffffff;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #main-heading {
+    font-size: 28px;
+  }
+  h2 {
+    color: #1d4ed8;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  section {
+    padding: 24px 0;
+    margin-bottom: 16px;
+  }
+  .site-header {
+    padding: 16px;
+  }
+  .site-footer {
+    padding: 16px;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0 0 12px;
+  }
+  p {
+    margin: 12px 0;
+  }
+  .project-card {
+    border: 1px solid #64748b;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  nav a {
+    display: inline-block;
+    padding: 10px 12px;
+  }
+  .project-card a {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .skip-link {
+    display: inline-block;
+    padding: 10px 16px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .project-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 280px;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+  .site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+  }
+  .profile-image {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+  .about-text {
+    min-width: 0;
+  }
+  .about-me {
+    grid-template-rows: auto;
+  }
+  .dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+  .dark-mode .site-header {
+    background-color: #172033;
+  }
+  .dark-mode .site-footer {
+    background-color: #172033;
+  }
+  .dark-mode .project-card {
+    background-color: #172033;
+    border-color: #94a3b8;
+  }
+  .dark-mode h2 {
+    color: #93c5fd;
+  }
+  .dark-mode a {
+    color: #93c5fd;
+  }
+  button {
+    font: inherit;
+    padding: 10px 12px;
+    border: 1px solid #64748b;
+  }
+  .project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .portfolio-app {
+    min-height: 100vh;
+  }
+  .project-card {
+    overflow-wrap: anywhere;
+  }
+  .status-text {
+    min-height: 28px;
+    margin: 12px 0;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+  }
+  .contact-form input {
+    font: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #64748b;
+  }
+  .contact-form textarea {
+    font: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #64748b;
+  }
+  .request-error {
+    border: 2px solid #b45309;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .form-feedback {
+    color: #b91c1c;
+    margin: 8px 0;
+  }
+  .form-success {
+    color: #15803d;
+    margin: 8px 0;
+  }
+  .post-content {
+    white-space: pre-wrap;
+    max-width: 800px;
+  }
+  .comment-item {
+    border-top: 1px solid #94a3b8;
+    padding: 12px 0;
+  }
+  .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .admin-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .admin-panel {
+    flex: 1 1 320px;
+    min-width: 0;
+    border: 1px solid #64748b;
+    padding: 16px;
+  }
+  .admin-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .admin-list li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #94a3b8;
+    padding: 10px 0;
+  }
+  .admin-list span:first-child {
+    overflow-wrap: anywhere;
+    min-width: 0;
+  }
+  .admin-actions {
+    display: flex;
+    gap: 8px;
+  }
+}
